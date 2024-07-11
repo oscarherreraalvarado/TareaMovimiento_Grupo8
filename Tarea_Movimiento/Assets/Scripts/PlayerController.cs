@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 camForward;         // Dirección hacia adelante de la cámara
     private Vector3 camRight;           // Dirección hacia la derecha de la cámara
           //video 5
-    public bool isOnlope = false;       // Booleano para verificar si estamos en una pendiente
+    public bool isOnSlope = false;       // Booleano para verificar si estamos en una pendiente
    
     private Vector3 hitNormal;          // Dirección del vector normal cuando colisionamos con algo
     public float slideVelocity;         // Velocidad de deslizamiento en pendientes
@@ -82,6 +82,8 @@ public class PlayerController : MonoBehaviour
             fallVelocity -= gravity * Time.deltaTime;  // Si el jugador está en el aire, aumenta la velocidad de caída
             movePlayer.y = fallVelocity;  // Aplica la velocidad de caída al movimiento
         }
+
+        slideDown();  // Controla el deslizamiento en pendientes
     }
 
     public void PlayersKills()
@@ -91,13 +93,14 @@ public class PlayerController : MonoBehaviour
             fallVelocity = jumpForce;  // Si el jugador está en el suelo y presiona el botón de salto, aplica la fuerza de salto
             movePlayer.y = fallVelocity;  // Aplica la fuerza de salto al movimiento
         }
-        slideDown();  // Controla el deslizamiento en pendientes
+       
     }
     //video 5
     public void slideDown()
     {
-        isOnlope = Vector3.Angle(Vector3.up, hitNormal) >= player.slopeLimit;  // Verifica si el jugador está en una pendiente
-        if (isOnlope)
+        isOnSlope = Vector3.Angle(Vector3.up, hitNormal) >= player.slopeLimit;  // Verifica si el jugador está en una pendiente
+
+        if (isOnSlope)
         {
             movePlayer.x += ((1f - hitNormal.y) * hitNormal.x) * slideVelocity;  // Ajusta el movimiento en x según el deslizamiento
             movePlayer.z += ((1f - hitNormal.y) * hitNormal.z) * slideVelocity;  // Ajusta el movimiento en z según el deslizamiento

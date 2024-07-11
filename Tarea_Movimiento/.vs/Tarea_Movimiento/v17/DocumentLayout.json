@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\IT\\TareaMovimiento_Grupo8\\Tarea_Movimiento\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2E1F16F8-8039-1B47-62BF-2FC88EE3D0D6}|Assembly-CSharp.csproj|c:\\users\\it\\tareamovimiento_grupo8\\tarea_movimiento\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2E1F16F8-8039-1B47-62BF-2FC88EE3D0D6}|Assembly-CSharp.csproj|c:\\users\\it\\tareamovimiento_grupo8\\tarea_movimiento\\assets\\scripts\\pushrigidbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E1F16F8-8039-1B47-62BF-2FC88EE3D0D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pushrigidbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E1F16F8-8039-1B47-62BF-2FC88EE3D0D6}|Assembly-CSharp.csproj|C:\\Users\\IT\\TareaMovimiento_Grupo8\\Tarea_Movimiento\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E1F16F8-8039-1B47-62BF-2FC88EE3D0D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -19,6 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PushRigidBody.cs",
+              "DocumentMoniker": "C:\\Users\\IT\\TareaMovimiento_Grupo8\\Tarea_Movimiento\\Assets\\Scripts\\PushRigidBody.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PushRigidBody.cs",
+              "ToolTip": "C:\\Users\\IT\\TareaMovimiento_Grupo8\\Tarea_Movimiento\\Assets\\Scripts\\PushRigidBody.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PushRigidBody.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T03:17:54.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\IT\\TareaMovimiento_Grupo8\\Tarea_Movimiento\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
@@ -26,8 +43,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
               "ViewState": "AQIAAFYAAAAAAAAAAAAwwHMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T01:13:22.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-08T01:13:22.112Z"
             }
           ]
         }

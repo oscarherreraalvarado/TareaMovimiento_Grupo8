@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pc\\Desktop\\Jonathan\\Claudia\\TareaMovimiento_Grupo8\\Tarea_Movimiento\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E1F16F8-8039-1B47-62BF-2FC88EE3D0D6}|Assembly-CSharp.csproj|c:\\users\\pc\\desktop\\jonathan\\claudia\\tareamovimiento_grupo8\\tarea_movimiento\\assets\\scripts\\movewithfloor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E1F16F8-8039-1B47-62BF-2FC88EE3D0D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movewithfloor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E1F16F8-8039-1B47-62BF-2FC88EE3D0D6}|Assembly-CSharp.csproj|c:\\users\\pc\\desktop\\jonathan\\claudia\\tareamovimiento_grupo8\\tarea_movimiento\\assets\\platformcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E1F16F8-8039-1B47-62BF-2FC88EE3D0D6}|Assembly-CSharp.csproj|solutionrelative:assets\\platformcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MoveWithFloor.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Jonathan\\Claudia\\TareaMovimiento_Grupo8\\Tarea_Movimiento\\Assets\\Scripts\\MoveWithFloor.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MoveWithFloor.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Jonathan\\Claudia\\TareaMovimiento_Grupo8\\Tarea_Movimiento\\Assets\\Scripts\\MoveWithFloor.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MoveWithFloor.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAzwBcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T04:25:11.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlatformController.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Jonathan\\Claudia\\TareaMovimiento_Grupo8\\Tarea_Movimiento\\Assets\\PlatformController.cs",
+              "RelativeDocumentMoniker": "Assets\\PlatformController.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Jonathan\\Claudia\\TareaMovimiento_Grupo8\\Tarea_Movimiento\\Assets\\PlatformController.cs",
+              "RelativeToolTip": "Assets\\PlatformController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T22:15:31.297Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

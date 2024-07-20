@@ -362,6 +362,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.34f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/PlatformController.cs"
 "Assets/Scripts/CogerObjeto.cs"
+"Assets/Scripts/MoveWithFloor.cs"
 "Assets/Scripts/PickableObject.cs"
 "Assets/Scripts/PickUpObject.cs"
 "Assets/Scripts/PlayerController.cs"

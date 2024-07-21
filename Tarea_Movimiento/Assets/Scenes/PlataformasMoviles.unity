@@ -1396,6 +1396,7 @@ MonoBehaviour:
   isOnSlope: 0
   slideVelocity: 5
   slopeForceDown: 5
+  playerAnimatorController: {fileID: 0}
 --- !u!143 &348107546
 CharacterController:
   m_ObjectHideFlags: 0
@@ -6946,11 +6947,12 @@ MonoBehaviour:
   gravity: 30
   fallVelocity: 10
   jumpForce: 10
-  playerSpeed: 10
+  playerSpeed: 3
   mainCamara: {fileID: 241967726}
   isOnSlope: 0
   slideVelocity: 5
   slopeForceDown: 5
+  playerAnimatorController: {fileID: 0}
 --- !u!1 &1824539151
 GameObject:
   m_ObjectHideFlags: 0
@@ -7682,6 +7684,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: a5674d01884853d4e8f2386a171e14d9, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1ebfa119005fc0d448156baf60bfb799, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

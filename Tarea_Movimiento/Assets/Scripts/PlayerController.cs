@@ -28,10 +28,16 @@ public class PlayerController : MonoBehaviour
     public float slideVelocity;         // Velocidad de deslizamiento en pendientes
     public float slopeForceDown;        // Fuerza hacia abajo en una pendiente
 
+
+    //Variables de animacion
+    public Animator playerAnimatorController;
+
+
     // Start se llama antes de la primera actualización del frame
     void Start()
     {
         player = GetComponent<CharacterController>();  // Inicializa el CharacterController del jugador
+        playerAnimatorController = GetComponent<Animator>();
     }
 
     // Update se llama una vez por frame
@@ -42,6 +48,7 @@ public class PlayerController : MonoBehaviour
 
         playerInput = new Vector3(horizontalMove, 0, verticalMove);  // Crea un vector con el input del jugador
         playerInput = Vector3.ClampMagnitude(playerInput, 1);  // Limita la magnitud del vector a 1
+        playerAnimatorController.SetFloat("PlayerWalkVelocity", playerInput.magnitude * playerSpeed);
 
         CamDirection();  // Ajusta la dirección de la cámara
 
@@ -81,7 +88,9 @@ public class PlayerController : MonoBehaviour
         {
             fallVelocity -= gravity * Time.deltaTime;  // Si el jugador está en el aire, aumenta la velocidad de caída
             movePlayer.y = fallVelocity;  // Aplica la velocidad de caída al movimiento
+            playerAnimatorController.SetFloat("PlayerVerticalVelocity", player.velocity.y);
         }
+        playerAnimatorController.SetBool("IsGrounded", player.isGrounded);
 
         slideDown();  // Controla el deslizamiento en pendientes
     }
@@ -92,6 +101,7 @@ public class PlayerController : MonoBehaviour
         {
             fallVelocity = jumpForce;  // Si el jugador está en el suelo y presiona el botón de salto, aplica la fuerza de salto
             movePlayer.y = fallVelocity;  // Aplica la fuerza de salto al movimiento
+            playerAnimatorController.SetTrigger("PlayerJump");
         }
        
     }
@@ -112,5 +122,26 @@ public class PlayerController : MonoBehaviour
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         hitNormal = hit.normal;  // Almacena la dirección normal del punto de colisión
+    }
+
+    //private void OnTriggerStay(Collider other)
+    //{
+    //    if (other.tag = "MovingPlatform")
+    //    {
+    //        Debug.Log("Una Plataforma!");
+    //        player.transform.SetParent(other.transform);
+    //    }
+    //}
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "MovingPlatform")
+        {
+            player.transform.SetParent(null);
+        }
+    }
+    private void OnAnimatorMove()
+    {
+        
     }
 }
